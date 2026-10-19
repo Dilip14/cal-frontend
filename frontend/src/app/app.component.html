@@ -1,0 +1,32 @@
+<div class="calculator-container">
+  <div class="calculator">
+    <!-- Read-only Display screen -->
+    <input type="text" class="display" [value]="displayValue" readonly placeholder="0">
+
+    <!-- Button Pad -->
+    <div class="buttons">
+      <button class="btn ctrl-btn" (click)="clear()">C</button>
+      <button class="btn ctrl-btn" (click)="delete()">DEL</button>
+      <button class="btn op-btn" (click)="setOperator('/')">/</button>
+      <button class="btn op-btn" (click)="setOperator('*')">*</button>
+
+      <button class="btn" (click)="append('7')">7</button>
+      <button class="btn" (click)="append('8')">8</button>
+      <button class="btn" (click)="append('9')">9</button>
+      <button class="btn op-btn" (click)="setOperator('-')">-</button>
+
+      <button class="btn" (click)="append('4')">4</button>
+      <button class="btn" (click)="append('5')">5</button>
+      <button class="btn" (click)="append('6')">6</button>
+      <button class="btn op-btn" (click)="setOperator('+')">+</button>
+
+      <button class="btn" (click)="append('1')">1</button>
+      <button class="btn" (click)="append('2')">2</button>
+      <button class="btn" (click)="append('3')">3</button>
+      <button class="btn eq-btn" (click)="calculate()">=</button>
+
+      <button class="btn zero-btn" (click)="append('0')">0</button>
+      <button class="btn" (click)="append('.')">.</button>
+    </div>
+  </div>
+</div>
