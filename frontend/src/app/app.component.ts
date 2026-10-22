@@ -70,7 +70,7 @@ export class AppComponent {
       operator: this.operator
     };
 
-    this.http.post<any>('http://104.197.52.175:8080/api/calculate', requestPayload)
+    this.http.post<any>('http://34.55.241.229:8080/api/calculate', requestPayload)
       .subscribe({
         next: (response) => {
           // Handles cases where backend returns errors (like divide by zero)
